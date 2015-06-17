@@ -1,0 +1,5 @@
+name = "md2fswiki"
+badges = ["travis"]
+authority="cpan:YWATASE"
+
+module_maker="ModuleBuildTiny"

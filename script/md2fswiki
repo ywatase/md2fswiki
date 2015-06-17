@@ -1,0 +1,14 @@
+#!/usr/bin/env LANG=C LC_ALL=C perl
+use strict;
+use warnings;
+
+use HTML::WikiConverter;
+use Text::Markdown::Hoedown;
+my %opts = (
+    extensions => 1 << 2 | 1 << 1
+
+);
+my $markdown = join '', <>;
+my $wc = new HTML::WikiConverter( dialect => 'FreeStyleWiki', preserve_tags => 0);
+
+print $wc->html2wiki( markdown($markdown, %opts) );

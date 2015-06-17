@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/ywatase/md2fswiki.svg?branch=master)](https://travis-ci.org/ywatase/md2fswiki)
 # NAME
 
 md2fswiki - convert markdown to fswiki style
